@@ -1,0 +1,34 @@
+name: spec_assist
+description: Demonstrates how to use the speech_to_text plugin.
+version: 1.1.0
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  provider: 
+  speech_to_text: ^6.1.1
+  flutter_bluetooth_serial: ^0.4.0
+  path_provider: ^2.0.14
+  rxdart: ^0.27.7
+  scoped_model: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# The following section is specific to Flutter.
+flutter:
+
+  uses-material-design: true
+
+  assets:
+  - assets/sounds/speech_to_text_listening.m4r
+  - assets/sounds/speech_to_text_cancel.m4r
+  - assets/sounds/speech_to_text_stop.m4r
