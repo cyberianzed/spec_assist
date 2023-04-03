@@ -3,9 +3,14 @@ import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 import '../ble/SelectBondedDevicePage.dart';
 import 'speech_main.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,5 +85,5 @@ class HomePage extends StatelessWidget {
         },
       ),
     );
-  } //finish
+  }
 }

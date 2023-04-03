@@ -1,8 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
-
 import './BluetoothDeviceListEntry.dart';
 
 class SelectBondedDevicePage extends StatefulWidget {
@@ -137,7 +135,18 @@ class _SelectBondedDevicePage extends State<SelectBondedDevicePage> {
               : IconButton(
                   icon: Icon(Icons.replay),
                   onPressed: _restartDiscovery,
-                )
+                ),
+          // IconButton(
+          //     icon: Icon(
+          //       Icons.home,
+          //       color: Colors.white,
+          //     ),
+          //     onPressed: () {
+          //       if (connection != null) {
+          //         connection.close();
+          //         connection = null;
+          //       }
+          //     }),
         ],
       ),
       body: ListView(children: list),
